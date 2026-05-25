@@ -1,0 +1,106 @@
+/* ══════════════════════════════════════════════
+   FOOTER
+══════════════════════════════════════════════ */
+footer {
+  background:var(--dark2);
+  border-top:1px solid rgba(201,168,76,0.12);
+  padding:38px clamp(20px,5vw,60px) 26px;
+}
+.footer-inner { max-width:1200px; margin:0 auto; }
+.footer-grid {
+  display:grid; grid-template-columns:1.6fr 1fr 1fr 1.3fr;
+  gap:28px; margin-bottom:28px;
+}
+.footer-brand .logo { margin-bottom:11px; }
+.footer-brand > p { font-size:0.83rem; color:rgba(245,239,224,0.48); line-height:1.65; font-weight:300; margin-bottom:14px; }
+.social-links { display:flex; gap:9px; margin-top:4px; }
+.social-link {
+  width:38px; height:38px;
+  border-radius:50%;
+  display:flex; align-items:center; justify-content:center;
+  text-decoration:none; transition:var(--tr);
+  border:1.5px solid rgba(255,255,255,0.12);
+  background:rgba(255,255,255,0.06);
+  color:#aaa;
+}
+.social-link:hover { transform:translateY(-3px); box-shadow:0 6px 18px rgba(0,0,0,0.5); }
+/* YouTube – red */
+.social-yt  { color:#ff0000; border-color:rgba(255,0,0,0.3); background:rgba(255,0,0,0.08); }
+.social-yt:hover  { background:#ff0000; color:#fff; border-color:#ff0000; }
+/* Facebook – blue */
+.social-fb  { color:#1877f2; border-color:rgba(24,119,242,0.3); background:rgba(24,119,242,0.08); }
+.social-fb:hover  { background:#1877f2; color:#fff; border-color:#1877f2; }
+/* Instagram – pink */
+.social-ig  { color:#e1306c; border-color:rgba(225,48,108,0.3); background:rgba(225,48,108,0.08); }
+.social-ig:hover  { background:linear-gradient(45deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888); color:#fff; border-color:transparent; }
+/* WhatsApp – green */
+.social-wa  { color:#25d366; border-color:rgba(37,211,102,0.3); background:rgba(37,211,102,0.08); }
+.social-wa:hover  { background:#25d366; color:#fff; border-color:#25d366; }
+.footer-col h4 {
+  font-family:'Cinzel',serif; font-size:0.8rem; letter-spacing:0.12em;
+  text-transform:uppercase; color:var(--gold); margin-bottom:14px;
+}
+.footer-col ul { list-style:none; display:flex; flex-direction:column; gap:7px; }
+.footer-col ul li a { font-size:0.83rem; color:rgba(245,239,224,0.48); text-decoration:none; transition:color var(--tr); font-weight:300; }
+.footer-col ul li a:hover { color:var(--gold); }
+.footer-col p { font-size:0.83rem; color:rgba(245,239,224,0.48); line-height:1.8; font-weight:300; }
+.footer-bottom {
+  border-top:1px solid rgba(201,168,76,0.1); padding-top:22px;
+  display:flex; justify-content:space-between; align-items:center;
+  gap:14px; flex-wrap:wrap;
+}
+.footer-bottom p { font-size:0.76rem; color:rgba(245,239,224,0.32); }
+.footer-bottom span { color:var(--gold); font-size:0.76rem; }
+
+/* ══════════════════════════════════════════════
+   TOAST
+══════════════════════════════════════════════ */
+#toast {
+  position:fixed; bottom:28px; right:28px;
+  background:var(--gold); color:var(--dark);
+  font-family:'Lato',sans-serif; font-size:0.84rem; font-weight:700;
+  padding:13px 22px; border-radius:var(--radius);
+  box-shadow:0 8px 24px rgba(0,0,0,0.4);
+  z-index:9998;
+  transform:translateY(80px); opacity:0;
+  transition:all 0.4s cubic-bezier(0.34,1.56,0.64,1);
+  pointer-events:none;
+}
+#toast.show { transform:translateY(0); opacity:1; }
+
+/* ══════════════════════════════════════════════
+   WHATSAPP FAB
+══════════════════════════════════════════════ */
+#wa-fab {
+  position:fixed; bottom:26px; right:26px;
+  width:56px; height:56px; border-radius:50%;
+  background:#25D366; z-index:9999;
+  display:flex; align-items:center; justify-content:center;
+  box-shadow:0 4px 20px rgba(37,211,102,0.44);
+  text-decoration:none;
+  transition:transform 0.25s ease,box-shadow 0.25s ease;
+  animation:waBounce 2s ease-in-out 2.5s 3;
+}
+#wa-fab:hover { transform:scale(1.12); box-shadow:0 6px 28px rgba(37,211,102,0.58); }
+
+/* ══════════════════════════════════════════════
+   ANIMATIONS
+══════════════════════════════════════════════ */
+@keyframes fadeUp {
+  from { opacity:0; transform:translateY(22px); }
+  to   { opacity:1; transform:translateY(0); }
+}
+@keyframes fadeRight {
+  from { opacity:0; transform:translateX(22px); }
+  to   { opacity:1; transform:translateX(0); }
+}
+@keyframes waBounce {
+  0%,100% { transform:translateY(0); }
+  50%      { transform:translateY(-8px); }
+}
+
+.reveal {
+  opacity:0; transform:translateY(18px);
+  transition:opacity 0.65s ease, transform 0.65s ease;
+}
+.reveal.visible { opacity:1; transform:translateY(0); }

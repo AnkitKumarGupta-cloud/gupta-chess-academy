@@ -1,0 +1,144 @@
+/* ══════════════════════════════════════════════
+   RESPONSIVE
+══════════════════════════════════════════════ */
+/* ═══════════════════════════════════════════════
+   RESPONSIVE — TABLET (≤ 1024px)
+═══════════════════════════════════════════════ */
+@media (max-width:1024px) {
+  #hero-inner { grid-template-columns: 1fr 260px; gap:24px; }
+  .coaches-grid { grid-template-columns: repeat(4,1fr); gap:12px; }
+  .hero-photo-showcase .showcase-img-top img,
+  .hero-photo-showcase .showcase-img-bottom img { height:160px; }
+  .coaches-grid { grid-template-columns: repeat(2,1fr); }
+}
+
+/* ═══════════════════════════════════════════════
+   RESPONSIVE — TABLET PORTRAIT / LARGE PHONE (≤ 900px)
+═══════════════════════════════════════════════ */
+@media (max-width:900px) {
+  /* nav */
+  #main-nav { display:none; }
+  #hamburger { display:flex; }
+
+  /* hero */
+  #hero { height:auto; min-height:auto; }
+  #hero-inner {
+    grid-template-columns:1fr;
+    text-align:center;
+    padding:28px clamp(16px,4vw,40px) 20px;
+    gap:24px;
+  }
+  #hero-inner h1 { font-size:clamp(1.7rem,6vw,2.8rem); }
+  #hero-inner .hero-desc { max-width:100%; margin-left:auto; margin-right:auto; }
+  .hero-btns { justify-content:center; }
+
+  /* photo showcase on tablet */
+  .hero-photo-showcase {
+    flex-direction:row;
+    max-width:560px;
+    margin:0 auto;
+  }
+  .hero-photo-showcase .showcase-img-top,
+  .hero-photo-showcase .showcase-img-bottom { flex:1; }
+  .hero-photo-showcase .showcase-img-top img,
+  .hero-photo-showcase .showcase-img-bottom img { height:200px; }
+
+  /* stats bar */
+  #stats-bar .inner { padding:0 clamp(12px,3vw,30px); }
+
+  /* home sections */
+  .about-grid { grid-template-columns:1fr; gap:28px; }
+  .about-img-wrap img { height:300px; }
+  .pricing-grid { grid-template-columns:repeat(2,1fr); }
+  .testi-grid { grid-template-columns:repeat(2,1fr); }
+
+  /* contact */
+  .contact-grid { grid-template-columns:1fr; gap:28px; }
+
+  /* footer */
+  .footer-grid { grid-template-columns:1fr 1fr; gap:24px; }
+
+  /* about page */
+  .method-grid { grid-template-columns:1fr; }
+  .story-cols  { grid-template-columns:1fr; gap:20px; }
+  .story-block { padding:28px 24px; }
+
+  /* courses */
+  .courses-grid { grid-template-columns:repeat(2,1fr); }
+}
+
+/* ═══════════════════════════════════════════════
+   RESPONSIVE — PHONE (≤ 600px)
+═══════════════════════════════════════════════ */
+@media (max-width:600px) {
+  :root { --header-h: 60px; }
+
+  /* hero */
+  #hero-inner {
+    padding: 20px 16px 16px;
+    gap: 20px;
+  }
+  #hero-inner h1 { font-size: clamp(1.5rem,7vw,2.2rem); }
+  #hero-inner .hero-desc { font-size:0.88rem; }
+  .hero-btns { flex-direction:column; align-items:center; gap:10px; }
+  .btn-primary, .btn-outline { width:100%; max-width:280px; text-align:center; }
+
+  /* photo showcase stacked on phone */
+  .hero-photo-showcase { flex-direction:column; width:100%; }
+  .hero-photo-showcase .showcase-img-top img,
+  .hero-photo-showcase .showcase-img-bottom img { height:180px; }
+
+  /* stats */
+  #stats-bar .inner { flex-wrap:wrap; }
+  .stat-item { flex:1 1 50%; border-right:none; border-bottom:1px solid rgba(201,168,76,0.1); padding:14px 10px; }
+  .stat-item:nth-child(odd) { border-right:1px solid rgba(201,168,76,0.1); }
+  .stat-item:last-child,
+  .stat-item:nth-last-child(2):nth-child(odd) { border-bottom:none; }
+  .stat-num { font-size:1.4rem; }
+
+  /* home sections */
+  .section { padding:36px 16px; }
+  .section-sm { padding-top:20px; padding-bottom:20px; }
+  .about-img-wrap img { height:220px; }
+  .feat-grid { grid-template-columns:1fr; }
+  .testi-grid { grid-template-columns:1fr; }
+  .cta-banner { padding:20px 16px; flex-direction:column; text-align:center; }
+  .cta-banner .btn { width:100%; max-width:260px; }
+
+  /* courses */
+  .courses-grid { grid-template-columns:1fr; }
+  .pricing-grid { grid-template-columns:1fr; }
+
+  /* contact form */
+  .form-row { grid-template-columns:1fr; }
+  .form-group.full { grid-column:span 1; }
+
+  /* about page */
+  .coaches-grid { grid-template-columns:1fr; }
+  .story-block { padding:22px 16px; }
+  .method-grid { grid-template-columns:1fr; }
+
+  /* footer */
+  .footer-grid { grid-template-columns:1fr; gap:20px; }
+  .footer-bottom { flex-direction:column; text-align:center; gap:8px; }
+  footer { padding:28px 16px 20px; }
+
+  /* fab & toast */
+  #wa-fab { bottom:16px; right:16px; width:48px; height:48px; }
+  #toast { bottom:16px; right:16px; left:16px; font-size:0.8rem; padding:11px 16px; }
+
+  /* blog */
+  .blog-grid { grid-template-columns:1fr; }
+}
+
+/* ═══════════════════════════════════════════════
+   RESPONSIVE — SMALL PHONE (≤ 380px)
+═══════════════════════════════════════════════ */
+@media (max-width:380px) {
+  #hero-inner h1 { font-size:1.4rem; }
+  .hero-badge { font-size:0.62rem; padding:4px 12px; }
+  .section-title { font-size:1.3rem; }
+  .hero-photo-showcase .showcase-img-top img,
+  .hero-photo-showcase .showcase-img-bottom img { height:150px; }
+  .logo-text .brand { font-size:1rem; }
+}
