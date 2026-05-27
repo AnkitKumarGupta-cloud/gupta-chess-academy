@@ -1,7 +1,7 @@
 /* ── BLOG MODAL ── */
 const BLOG_DATA = {
   blog1: {
-    img: 'https://images.unsplash.com/photo-1580541832626-2a7131ee809f?w=720&h=400&fit=crop&q=80',
+    img: 'images/blog/blog1-openings.jpg',
     cat: 'Openings',
     title: '5 Openings Every Beginner Must Learn First',
     date: 'Apr 10, 2026',
@@ -29,7 +29,7 @@ const BLOG_DATA = {
     `
   },
   blog2: {
-    img: 'https://images.unsplash.com/photo-1529699211952-734e80c4d42b?w=720&h=400&fit=crop&q=80',
+    img: 'images/blog/blog2-tactics.jpg',
     cat: 'Tactics',
     title: 'Pins, Forks & Skewers — The 3 Tactics That Win Most Games',
     date: 'Mar 22, 2026',
@@ -52,7 +52,7 @@ const BLOG_DATA = {
     `
   },
   blog4: {
-    img: 'https://images.unsplash.com/photo-1560174038-da43ac74f01b?w=720&h=400&fit=crop&q=80',
+    img: 'images/blog/blog3-psychology.jpg',
     cat: 'Psychology',
     title: 'How to Stay Calm in a Losing Position — Tournament Tips',
     date: 'Feb 14, 2026',
@@ -81,7 +81,7 @@ const BLOG_DATA = {
     `
   },
   blog5: {
-    img: 'https://images.unsplash.com/photo-1611195974226-a6a9be9dd763?w=720&h=400&fit=crop&q=80',
+    img: 'images/blog/blog4-kids-age.jpg',
     cat: 'Kids & Parents',
     title: 'What Age Should Your Child Start Learning Chess?',
     date: 'Jan 28, 2026',
@@ -104,7 +104,7 @@ const BLOG_DATA = {
     `
   },
   blog6: {
-    img: 'https://images.unsplash.com/photo-1580541832626-2a7131ee809f?w=720&h=400&fit=crop&q=80&crop=bottom',
+    img: 'images/blog/blog5-mistakes.jpg',
     cat: 'Beginners',
     title: '7 Common Mistakes Every Chess Beginner Makes (And How to Fix Them)',
     date: 'Jan 5, 2026',
@@ -138,7 +138,7 @@ const BLOG_DATA = {
     `
   },
   blog7: {
-    img: 'https://images.unsplash.com/photo-1611195974226-a6a9be9dd763?w=720&h=400&fit=crop&q=80&crop=center',
+    img: 'images/blog/blog6-chess-parent.jpg',
     cat: 'Kids & Parents',
     title: 'Dear Chess Parent: Let Your Child Play',
     date: 'May 20, 2026',
