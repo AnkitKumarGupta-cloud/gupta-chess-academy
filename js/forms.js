@@ -54,7 +54,7 @@ function clearInvalid() {
 
 /* ── FORM SUBMIT ── */
 function submitForm() {
-  const btn = event && event.currentTarget ? event.currentTarget : document.querySelector('#page-contact .btn-primary');
+  const btn = event && event.currentTarget ? event.currentTarget : document.querySelector('.btn-primary');
   clearInvalid();
 
   const val = id => { const el = document.getElementById(id); return el ? el.value.trim() : ''; };

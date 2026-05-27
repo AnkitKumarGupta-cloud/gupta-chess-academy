@@ -1,2 +1,2 @@
 /* ── INIT ── */
-document.addEventListener('DOMContentLoaded', initReveal);
+/* initReveal is now called from animations.js on DOMContentLoaded */

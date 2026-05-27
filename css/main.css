@@ -157,15 +157,10 @@ body {
 #mobile-nav a:hover { color:var(--gold); background:rgba(201,168,76,0.06); }
 
 /* ══════════════════════════════════════════════
-   PAGE SYSTEM
-   Only .active page is shown; hidden pages have
-   no height, no overflow contribution.
+   PAGE LAYOUT
 ══════════════════════════════════════════════ */
-.page { display:none; }
-.page.active { display:block; }
-
-/* Every page gets top-padding equal to header height */
-.page-inner {
+/* Top padding for fixed header */
+main {
   padding-top: var(--header-h);
 }
 

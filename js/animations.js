@@ -1,6 +1,7 @@
 /* ── REVEAL ANIMATIONS ── */
 function initReveal() {
-  const els = document.querySelectorAll('.page.active .reveal:not(.visible)');
+  // Works for both single-page (.page.active .reveal) and multi-page (.reveal)
+  const els = document.querySelectorAll('.reveal:not(.visible)');
   if (!els.length) return;
   const obs = new IntersectionObserver((entries) => {
     entries.forEach((e, i) => {
@@ -9,6 +10,7 @@ function initReveal() {
         obs.unobserve(e.target);
       }
     });
-  }, { threshold:0.1 });
+  }, { threshold: 0.1 });
   els.forEach(el => obs.observe(el));
 }
+document.addEventListener('DOMContentLoaded', initReveal);

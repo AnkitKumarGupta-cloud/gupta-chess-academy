@@ -1,7 +1,7 @@
 /* ── BLOG MODAL ── */
 const BLOG_DATA = {
   blog1: {
-    img: 'images/blog/blog1-openings.jpg',
+    img: 'https://images.unsplash.com/photo-1580541832626-2a7131ee809f?w=720&h=400&fit=crop&q=80',
     cat: 'Openings',
     title: '5 Openings Every Beginner Must Learn First',
     date: 'Apr 10, 2026',
@@ -29,7 +29,7 @@ const BLOG_DATA = {
     `
   },
   blog2: {
-    img: 'images/blog/blog2-tactics.jpg',
+    img: 'https://images.unsplash.com/photo-1529699211952-734e80c4d42b?w=720&h=400&fit=crop&q=80',
     cat: 'Tactics',
     title: 'Pins, Forks & Skewers — The 3 Tactics That Win Most Games',
     date: 'Mar 22, 2026',
@@ -51,8 +51,8 @@ const BLOG_DATA = {
       <p>That's when it gets fun.</p>
     `
   },
-  blog3: {
-    img: 'images/blog/blog3-psychology.jpg',
+  blog4: {
+    img: 'https://images.unsplash.com/photo-1560174038-da43ac74f01b?w=720&h=400&fit=crop&q=80',
     cat: 'Psychology',
     title: 'How to Stay Calm in a Losing Position — Tournament Tips',
     date: 'Feb 14, 2026',
@@ -80,8 +80,8 @@ const BLOG_DATA = {
       <p>The players who win tournaments aren't always the ones who make the best moves. They're often the ones who hold themselves together when things go wrong. That's a skill. And like any skill, it can be trained.</p>
     `
   },
-  blog4: {
-    img: 'images/blog/blog4-kids-age.jpg',
+  blog5: {
+    img: 'https://images.unsplash.com/photo-1611195974226-a6a9be9dd763?w=720&h=400&fit=crop&q=80',
     cat: 'Kids & Parents',
     title: 'What Age Should Your Child Start Learning Chess?',
     date: 'Jan 28, 2026',
@@ -103,8 +103,8 @@ const BLOG_DATA = {
       <p>Play casual games with them. Don't correct every move. Let them try things. Celebrate when they spot something clever, not just when they win. Chess is a long game — the students who are still playing five years from now are almost always the ones who felt supported early on, not pressured.</p>
     `
   },
-  blog5: {
-    img: 'images/blog/blog5-mistakes.jpg',
+  blog6: {
+    img: 'https://images.unsplash.com/photo-1580541832626-2a7131ee809f?w=720&h=400&fit=crop&q=80&crop=bottom',
     cat: 'Beginners',
     title: '7 Common Mistakes Every Chess Beginner Makes (And How to Fix Them)',
     date: 'Jan 5, 2026',
@@ -137,8 +137,8 @@ const BLOG_DATA = {
       <p>Don't work on all seven at once. Pick one. Focus on it for a week. Then move to the next. That's how you actually improve.</p>
     `
   },
-  blog6: {
-    img: 'images/blog/blog6-chess-parent.jpg',
+  blog7: {
+    img: 'https://images.unsplash.com/photo-1611195974226-a6a9be9dd763?w=720&h=400&fit=crop&q=80&crop=center',
     cat: 'Kids & Parents',
     title: 'Dear Chess Parent: Let Your Child Play',
     date: 'May 20, 2026',

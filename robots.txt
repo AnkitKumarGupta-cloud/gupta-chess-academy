@@ -1,0 +1,23 @@
+# robots.txt for Gupta Chess Academy
+# https://guptachessacademy.com
+
+User-agent: *
+Allow: /
+
+# Block irrelevant crawling of JS/CSS internals
+Disallow: /js/
+Disallow: /css/
+
+# Allow important assets
+Allow: /images/
+Allow: /favicon.ico
+Allow: /favicon-192.png
+
+# Google Bot specific
+User-agent: Googlebot
+Allow: /
+Disallow: /js/
+Disallow: /css/
+
+# Sitemaps
+Sitemap: https://guptachessacademy.com/sitemap.xml

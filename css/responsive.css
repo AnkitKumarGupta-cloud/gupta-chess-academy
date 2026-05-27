@@ -122,6 +122,8 @@
   .footer-grid { grid-template-columns:1fr; gap:20px; }
   .footer-bottom { flex-direction:column; text-align:center; gap:8px; }
   footer { padding:28px 16px 20px; }
+  .social-links { flex-wrap:wrap; gap:8px; }
+  .footer-brand { overflow:hidden; }
 
   /* fab & toast */
   #wa-fab { bottom:16px; right:16px; width:48px; height:48px; }
