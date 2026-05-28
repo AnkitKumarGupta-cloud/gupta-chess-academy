@@ -5,7 +5,7 @@ const BLOG_DATA = {
     cat: 'Openings',
     title: '5 Openings Every Beginner Must Learn First',
     date: 'Apr 10, 2026',
-    author: 'Ankit Kumar Gupta',
+    author: 'Ankit Gupta',
     content: `
       <p>One of the first things new students ask me is: "Which opening should I learn?" And honestly, it's the wrong question — but I get why they ask it. So let me answer the right version of it.</p>
       <p>You don't need 20 openings. You need 5 solid ones that teach you <em>how to think</em> in the opening, not just what moves to play. These are the ones I give every new student on day one.</p>
@@ -33,7 +33,7 @@ const BLOG_DATA = {
     cat: 'Tactics',
     title: 'Pins, Forks & Skewers — The 3 Tactics That Win Most Games',
     date: 'Mar 22, 2026',
-    author: 'Ankit Kumar Gupta',
+    author: 'Ankit Gupta',
     content: `
       <p>I've watched hundreds of beginner games. And I can tell you — most of them are decided not by brilliant plans or deep strategy. They're decided by three patterns that one player saw and the other didn't.</p>
       <p>Learn these three. Genuinely learn them. And your results will change almost immediately.</p>
@@ -56,7 +56,7 @@ const BLOG_DATA = {
     cat: 'Psychology',
     title: 'How to Stay Calm in a Losing Position — Tournament Tips',
     date: 'Feb 14, 2026',
-    author: 'Ankit Kumar Gupta',
+    author: 'Sanskar Agrawal',
     content: `
       <p>I've seen it happen in almost every tournament. A student gets into a bad position, panics, and then plays the next five moves in two minutes. The game is gone before they even give themselves a chance.</p>
       <p>The position was difficult. The collapse was optional.</p>
@@ -85,7 +85,7 @@ const BLOG_DATA = {
     cat: 'Kids & Parents',
     title: 'What Age Should Your Child Start Learning Chess?',
     date: 'Jan 28, 2026',
-    author: 'Ankit Kumar Gupta',
+    author: 'Sanskar Agrawal',
     content: `
       <p>The question I get asked most by parents — before they even ask about fees or timings — is this: "Is my child too young? Or have we already missed the window?"</p>
       <p>The honest answer is: there's no bad age to start. But the approach has to match the child. Let me tell you what actually works at different stages, based on years of teaching kids across all age groups.</p>
@@ -108,7 +108,7 @@ const BLOG_DATA = {
     cat: 'Beginners',
     title: '7 Common Mistakes Every Chess Beginner Makes (And How to Fix Them)',
     date: 'Jan 5, 2026',
-    author: 'Ankit Kumar Gupta',
+    author: 'Minu Gupta',
     content: `
       <p>After coaching for as long as I have, patterns start to jump out at you. And the mistakes beginners make? They're almost always the same ones. Same errors, different students, year after year.</p>
       <p>The good news: they're all fixable. Here's what I see constantly, and what to do about each one.</p>
@@ -142,7 +142,7 @@ const BLOG_DATA = {
     cat: 'Kids & Parents',
     title: 'Dear Chess Parent: Let Your Child Play',
     date: 'May 20, 2026',
-    author: 'Ankit Kumar Gupta',
+    author: 'Minu Gupta',
     content: `
       <p>Every weekend I see the same thing. Parents walking into tournament halls with their kids — new chess set, nervous smiles, water bottles and snacks carefully packed. The excitement is real. But so is the anxiety. And after the games? Sometimes I see a child crying on the way out. Not because they lost. Because of what their parent said after they lost.</p>
 
