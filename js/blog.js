@@ -5,7 +5,7 @@ const BLOG_DATA = {
     cat: 'Openings',
     title: '5 Openings Every Beginner Must Learn First',
     date: 'Apr 10, 2026',
-    author: 'Ankit Gupta',
+    author: 'Ankit',
     content: `
       <p>One of the first things new students ask me is: "Which opening should I learn?" And honestly, it's the wrong question — but I get why they ask it. So let me answer the right version of it.</p>
       <p>You don't need 20 openings. You need 5 solid ones that teach you <em>how to think</em> in the opening, not just what moves to play. These are the ones I give every new student on day one.</p>
@@ -33,7 +33,7 @@ const BLOG_DATA = {
     cat: 'Tactics',
     title: 'Pins, Forks & Skewers — The 3 Tactics That Win Most Games',
     date: 'Mar 22, 2026',
-    author: 'Ankit Gupta',
+    author: 'Ankit',
     content: `
       <p>I've watched hundreds of beginner games. And I can tell you — most of them are decided not by brilliant plans or deep strategy. They're decided by three patterns that one player saw and the other didn't.</p>
       <p>Learn these three. Genuinely learn them. And your results will change almost immediately.</p>
