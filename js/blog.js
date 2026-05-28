@@ -33,7 +33,7 @@ const BLOG_DATA = {
     cat: 'Tactics',
     title: 'Pins, Forks & Skewers — The 3 Tactics That Win Most Games',
     date: 'Mar 22, 2026',
-    author: 'Ankit',
+    author: 'Minu Gupta',
     content: `
       <p>I've watched hundreds of beginner games. And I can tell you — most of them are decided not by brilliant plans or deep strategy. They're decided by three patterns that one player saw and the other didn't.</p>
       <p>Learn these three. Genuinely learn them. And your results will change almost immediately.</p>
@@ -85,7 +85,7 @@ const BLOG_DATA = {
     cat: 'Kids & Parents',
     title: 'What Age Should Your Child Start Learning Chess?',
     date: 'Jan 28, 2026',
-    author: 'Sanskar Agrawal',
+    author: 'Ankit',
     content: `
       <p>The question I get asked most by parents — before they even ask about fees or timings — is this: "Is my child too young? Or have we already missed the window?"</p>
       <p>The honest answer is: there's no bad age to start. But the approach has to match the child. Let me tell you what actually works at different stages, based on years of teaching kids across all age groups.</p>
@@ -108,7 +108,7 @@ const BLOG_DATA = {
     cat: 'Beginners',
     title: '7 Common Mistakes Every Chess Beginner Makes (And How to Fix Them)',
     date: 'Jan 5, 2026',
-    author: 'Minu Gupta',
+    author: 'Sanskar Agrawal',
     content: `
       <p>After coaching for as long as I have, patterns start to jump out at you. And the mistakes beginners make? They're almost always the same ones. Same errors, different students, year after year.</p>
       <p>The good news: they're all fixable. Here's what I see constantly, and what to do about each one.</p>
