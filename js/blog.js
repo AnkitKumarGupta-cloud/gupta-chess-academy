@@ -142,7 +142,7 @@ const BLOG_DATA = {
     cat: 'Kids & Parents',
     title: 'Dear Chess Parent: Let Your Child Play',
     date: 'May 20, 2026',
-    author: 'Minu Gupta',
+    author: 'Ankit',
     content: `
       <p>Every weekend I see the same thing. Parents walking into tournament halls with their kids — new chess set, nervous smiles, water bottles and snacks carefully packed. The excitement is real. But so is the anxiety. And after the games? Sometimes I see a child crying on the way out. Not because they lost. Because of what their parent said after they lost.</p>
 
