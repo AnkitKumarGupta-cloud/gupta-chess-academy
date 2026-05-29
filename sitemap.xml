@@ -5,39 +5,39 @@
   <!-- Home -->
   <url>
     <loc>https://guptachessacademy.com/</loc>
-    <lastmod>2026-05-27</lastmod>
+    <lastmod>2026-05-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
 
   <!-- About Us -->
   <url>
-    <loc>https://guptachessacademy.com/about.html</loc>
-    <lastmod>2026-05-27</lastmod>
+    <loc>https://guptachessacademy.com/about</loc>
+    <lastmod>2026-05-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <!-- Courses -->
   <url>
-    <loc>https://guptachessacademy.com/courses.html</loc>
-    <lastmod>2026-05-27</lastmod>
+    <loc>https://guptachessacademy.com/courses</loc>
+    <lastmod>2026-05-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <!-- Blog -->
   <url>
-    <loc>https://guptachessacademy.com/blog.html</loc>
-    <lastmod>2026-05-27</lastmod>
+    <loc>https://guptachessacademy.com/blog</loc>
+    <lastmod>2026-05-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <!-- Contact -->
   <url>
-    <loc>https://guptachessacademy.com/contact.html</loc>
-    <lastmod>2026-05-27</lastmod>
+    <loc>https://guptachessacademy.com/contact</loc>
+    <lastmod>2026-05-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
