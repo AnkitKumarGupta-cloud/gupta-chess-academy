@@ -2,7 +2,8 @@
    ABOUT PAGE
 ══════════════════════════════════════════════ */
 .coaches-grid {
-  display:grid; grid-template-columns:repeat(4,1fr); gap:16px;
+  display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,300px)); gap:16px;
+  justify-content:center;
 }
 .coach-card {
   background:var(--dark2); border:1px solid rgba(201,168,76,0.12);
