@@ -19,30 +19,14 @@
     linear-gradient(135deg,rgba(26,20,16,0.93) 0%,rgba(46,38,32,0.72) 50%,rgba(26,20,16,0.89) 100%),
     url('https://images.unsplash.com/photo-1529699211952-734e80c4d42b?w=1600&q=80') center/cover no-repeat;
 }
-#hero-bg::before {            /* chess checker overlay — now actually visible */
+#hero-bg::before {            /* chess checker overlay */
   content:''; position:absolute; inset:0;
-  background-image:repeating-conic-gradient(rgba(201,168,76,0.05) 0% 25%,transparent 0% 50%);
-  background-size:64px 64px;
-  mask-image:linear-gradient(115deg, black 0%, black 55%, transparent 85%);
-  -webkit-mask-image:linear-gradient(115deg, black 0%, black 55%, transparent 85%);
+  background-image:repeating-conic-gradient(rgba(255,255,255,0.012) 0% 25%,transparent 0% 50%);
+  background-size:60px 60px;
 }
 #hero-bg::after {             /* radial gold glow */
   content:''; position:absolute; inset:0;
   background:radial-gradient(ellipse 80% 60% at 70% 50%,rgba(201,168,76,0.09) 0%,transparent 68%);
-}
-
-/* large ghosted knight silhouette, bleeding off the right edge */
-#hero-knight {
-  position:absolute; z-index:0; pointer-events:none;
-  right:-6%; top:50%; transform:translateY(-50%);
-  width:min(46vw, 620px); height:min(46vw, 620px);
-  opacity:0.10;
-  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 45 45"><path fill="%23c9a84c" d="M22 10c10.5 1 16.5 8 16 18l-.3 3.5c-.1 1.2-1 2-2.2 2H14c-1.1 0-1.9-.7-2.1-1.8-1.5-6.2 1.3-9.1 4.5-12.5 1-1.1 1.9-2.5 2.3-4.2H15c-.2-3.5 2-5.5 4.5-6.5C21 8 22 9 22 10z"/><path fill="%23c9a84c" d="M11.5 36.5c1-3 3-4 6.5-4h9c3.5 0 5.5 1 6.5 4l1 3.5H10.5l1-3.5z"/></svg>') center/contain no-repeat;
-  filter: drop-shadow(0 0 60px rgba(201,168,76,0.15));
-}
-
-@media (max-width: 900px) {
-  #hero-knight { opacity:0.07; width:70vw; height:70vw; right:-10%; }
 }
 
 /* hero body — grows to fill space above stats-bar */
