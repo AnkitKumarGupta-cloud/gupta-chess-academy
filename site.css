@@ -749,3 +749,43 @@ body.menu-open .menu nav a:nth-child(8) .mi>span{transition-delay:.84s}
 .subhero .sh-glyph{position:absolute;right:var(--pad);bottom:-8%;font-family:'Segoe UI Symbol','Apple Symbols','Noto Sans Symbols 2',serif;font-size:clamp(220px,34vw,520px);line-height:1;color:rgba(255,255,255,.05);pointer-events:none;user-select:none}
 @media (max-width:640px){.subhero .panel-inner{min-height:46svh;border-radius:20px;padding-top:16px;padding-bottom:30px}.subhero .sh-body{padding-top:64px}}
 .coach-photo img{object-position:50% 22%}
+
+/* ---------- google reviews ---------- */
+.reviews .panel-inner{background:var(--ink);color:#fff;border-radius:36px 36px 0 0;padding:56px var(--pad) 48px}
+.reviews.rv-page .panel-inner{background:var(--paper);color:var(--ink)}
+.reviews .sec-title .dim{color:#5a5a5a}
+.reviews.rv-page .sec-title .dim{color:#bcbcbc}
+.reviews.rv-page .sec-copy{color:#555}
+.rv-bar{display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;margin-top:40px;padding:22px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.rv-page .rv-bar{border-color:var(--line-d)}
+.rv-score{display:flex;align-items:center;gap:18px}
+.rv-num{font-size:clamp(64px,8vw,110px);line-height:.9}
+.rv-stars{color:#F4B400;letter-spacing:.14em;font-size:15px;line-height:1}
+.rv-stars.big{font-size:22px;margin-bottom:8px}
+.rv-count{color:rgba(255,255,255,.6);font-size:10.5px}
+.rv-page .rv-count{color:#666}
+.rv-bar .btn{color:#fff}
+.rv-more .btn{color:#fff}
+.rv-page .rv-bar .btn,.rv-page .rv-more .btn{color:var(--ink)}
+.rv-grid{columns:3;column-gap:14px;margin-top:28px}
+.rv-card{break-inside:avoid;display:flex;flex-direction:column;gap:16px;padding:24px;margin:0 0 14px;border-radius:22px;background:rgba(255,255,255,.05);border:1px solid var(--line);transition:transform .6s var(--ease),border-color .4s}
+.rv-card:hover{transform:translateY(-4px);border-color:rgba(200,16,46,.5)}
+.rv-page .rv-card{background:#fff;border-color:var(--line-d)}
+.rv-text{font-size:14.5px;line-height:1.7;color:rgba(255,255,255,.86)}
+.rv-page .rv-text{color:#333}
+.rv-by{display:flex;align-items:center;gap:12px;margin-top:auto;padding-top:14px;border-top:1px solid var(--line)}
+.rv-page .rv-by{border-color:var(--line-d)}
+.rv-av{width:38px;height:38px;border-radius:50%;background:var(--red);color:#fff;display:grid;place-items:center;font-weight:600;font-size:14px;flex:none}
+.rv-by b{display:block;font-size:13.5px;font-weight:600}
+.rv-by small{color:var(--muted);font-size:9.5px}
+.rv-more{margin-top:22px;display:flex;justify-content:center}
+body.menu-open .menu nav a:nth-child(9) .mi>span{transition-delay:.91s}
+@media (max-width:1100px){.rv-grid{columns:2}}
+@media (max-width:640px){
+  .reviews .panel-inner{border-radius:26px 26px 0 0;padding-top:36px;padding-bottom:30px}
+  .rv-bar{margin-top:26px}
+  .rv-grid{columns:1}
+  .rv-grid.swipe{columns:auto;display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;margin:14px calc(var(--pad) * -1) 0;padding:0 var(--pad) 6px;scroll-padding:0 var(--pad);scrollbar-width:none;overscroll-behavior-x:contain}
+  .rv-grid.swipe::-webkit-scrollbar{display:none}
+  .rv-grid.swipe .rv-card{flex:0 0 84%;scroll-snap-align:start;margin:0}
+}

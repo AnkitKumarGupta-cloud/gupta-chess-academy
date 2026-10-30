@@ -404,6 +404,8 @@
     scrollTrigger: { trigger: '.tabs', start: 'top 90%' } });
   G.from('.br-card', { y: 50, opacity: 0, duration: 1, ease: 'power3.out', stagger: .1,
     scrollTrigger: { trigger: '.br-grid', start: 'top 90%' } });
+  G.from('.rv-card', { y: 50, opacity: 0, duration: 1, ease: 'power3.out', stagger: .08,
+    scrollTrigger: { trigger: '.rv-grid', start: 'top 90%' } });
   G.from('.edge-fig', { y: 50, opacity: 0, duration: 1.1, ease: 'power3.out', stagger: .12,
     scrollTrigger: { trigger: '.edge-media', start: 'top 90%' } });
   G.from('.why, .edge-item', { y: 30, opacity: 0, duration: .9, ease: 'power3.out', stagger: .06,
