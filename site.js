@@ -431,7 +431,7 @@
   });
 
   /* ---------- active nav dot follows scroll ---------- */
-  const spy = []; // active nav link is set per page
+  const spy = [['founder', 0], ['programs', 1], ['achievements', 2], ['branches', 4]].filter(([id]) => document.getElementById(id));
   G.from('.demo-card', { y: 60, opacity: 0, duration: 1.1, ease: 'power3.out', scrollTrigger: { trigger: '.demo-card', start: 'top 90%' } });
   G.from('.steps li', { x: -30, opacity: 0, duration: .8, ease: 'power3.out', stagger: .08, scrollTrigger: { trigger: '.steps', start: 'top 90%' } });
   const navLinks = $$('.links a');
