@@ -804,4 +804,14 @@ body.menu-open .menu nav a:nth-child(9) .mi>span{transition-delay:.91s}
 .of-off{font-size:11px;opacity:.7}
 .of-card.best .of-off{opacity:.9}
 @media (max-width:900px){.offers{grid-template-columns:1fr 1fr}.of-intro{grid-column:1 / -1;padding:10px 0 0}}
-@media (max-width:640px){.offers{grid-template-columns:1fr;gap:12px;margin-top:18px}.of-intro{padding-bottom:10px}.of-card{min-height:170px;padding:22px}.of-pct{font-size:96px}}
+@media (max-width:640px){
+  .offers{grid-template-columns:1fr 1fr;gap:10px;margin-top:22px}
+  .of-intro{grid-column:1 / -1;padding:0 0 12px;gap:8px}
+  .of-title{font-size:30px;margin-top:6px}
+  .of-intro .btn{display:none}
+  .of-card{min-height:0;padding:16px;gap:12px;border-radius:20px}
+  .of-tag{flex-direction:column;align-items:flex-start;gap:8px;font-size:9.5px}
+  .of-badge{font-size:8px;padding:4px 8px}
+  .of-pct{font-size:68px}
+  .of-off{font-size:9.5px}
+}
