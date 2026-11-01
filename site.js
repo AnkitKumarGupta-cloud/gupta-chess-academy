@@ -398,13 +398,13 @@
   });
 
   /* ---------- misc entrances ---------- */
-  G.from('.p-card', { y: 70, opacity: 0, duration: 1.1, ease: 'power3.out', stagger: .1,
+  G.from('.p-card', { y: innerWidth <= 640 ? 0 : 70, opacity: 0, duration: 1.1, ease: 'power3.out', stagger: .1,
     scrollTrigger: { trigger: '.p-grid', start: 'top 88%' } });
   G.from('.tab', { y: 20, opacity: 0, duration: .9, ease: 'power3.out', stagger: .08,
     scrollTrigger: { trigger: '.tabs', start: 'top 90%' } });
-  G.from('.br-card', { y: 50, opacity: 0, duration: 1, ease: 'power3.out', stagger: .1,
+  G.from('.br-card', { y: innerWidth <= 640 ? 0 : 50, opacity: 0, duration: 1, ease: 'power3.out', stagger: .1,
     scrollTrigger: { trigger: '.br-grid', start: 'top 90%' } });
-  G.from('.rv-card', { y: 50, opacity: 0, duration: 1, ease: 'power3.out', stagger: .08,
+  G.from('.rv-card', { y: innerWidth <= 640 ? 0 : 50, opacity: 0, duration: 1, ease: 'power3.out', stagger: .08,
     scrollTrigger: { trigger: '.rv-grid', start: 'top 90%' } });
   G.from('.edge-fig', { y: 50, opacity: 0, duration: 1.1, ease: 'power3.out', stagger: .12,
     scrollTrigger: { trigger: '.edge-media', start: 'top 90%' } });
