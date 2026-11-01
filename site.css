@@ -787,3 +787,21 @@ body.menu-open .menu nav a:nth-child(9) .mi>span{transition-delay:.91s}
   .rv-grid.swipe::-webkit-scrollbar{display:none}
   .rv-grid.swipe .rv-card{flex:0 0 84%;scroll-snap-align:start;margin:0}
 }
+
+/* ---------- commitment offers ---------- */
+.offers{display:grid;grid-template-columns:1.25fr 1fr 1fr;gap:14px;margin-top:22px;align-items:stretch}
+.of-intro{display:flex;flex-direction:column;justify-content:space-between;gap:20px;padding:26px 8px 6px 0}
+.of-title{font-size:clamp(30px,3.6vw,54px);line-height:.98;margin-top:10px}
+.of-title .dim{color:#5a5a5a}
+.of-intro .btn{align-self:flex-start;color:#fff}
+.of-card{display:flex;flex-direction:column;justify-content:space-between;gap:14px;padding:26px;border-radius:24px;background:#fff;color:var(--ink);min-height:230px}
+.of-card.best{background:var(--red);color:#fff}
+.of-tag{display:flex;align-items:center;justify-content:space-between;gap:10px;font-size:10.5px;opacity:.75}
+.of-card.best .of-tag{opacity:1}
+.of-badge{background:#fff;color:var(--red);padding:5px 9px;border-radius:999px;font-size:9px;font-weight:700;letter-spacing:.12em}
+.of-pct{font-size:clamp(88px,10vw,150px);line-height:.85}
+.of-pct small{font-size:.45em;margin-left:4px;vertical-align:top;position:relative;top:.12em}
+.of-off{font-size:11px;opacity:.7}
+.of-card.best .of-off{opacity:.9}
+@media (max-width:900px){.offers{grid-template-columns:1fr 1fr}.of-intro{grid-column:1 / -1;padding:10px 0 0}}
+@media (max-width:640px){.offers{grid-template-columns:1fr;gap:12px;margin-top:18px}.of-intro{padding-bottom:10px}.of-card{min-height:170px;padding:22px}.of-pct{font-size:96px}}
