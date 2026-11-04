@@ -13,8 +13,7 @@
   const root = document.documentElement;
   const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   const G = window.gsap, ST = window.ScrollTrigger;
-  const phone = window.matchMedia('(max-width: 640px)').matches; // phones: plain site, no scroll effects
-  const motion = !!(G && ST) && !reduce && !phone;
+  const motion = !!(G && ST) && !reduce;
   const $ = (s, c = document) => c.querySelector(s);
   const $$ = (s, c = document) => Array.from(c.querySelectorAll(s));
 
