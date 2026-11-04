@@ -818,3 +818,45 @@ body.menu-open .menu nav a:nth-child(9) .mi>span{transition-delay:.91s}
 
 /* phones: sections scroll normally, one after another (no stacking) */
 @media (max-width:640px){.panel{position:relative!important;top:auto!important}}
+
+/* =========================================================
+   PHONE REDESIGN  (max-width:640px ONLY — desktop/tablet untouched)
+   Same theme, same colours; fixes layout + rhythm on phones.
+   ========================================================= */
+@media (max-width:640px){
+
+  /* ---- every section is its own rounded card on the grey surround (no black wedges) ---- */
+  main.frame{background:transparent;border-radius:0;overflow:visible}
+  .frame .panel{margin-bottom:8px}
+  .frame .panel.last{margin-bottom:0}
+  .frame .panel .panel-inner{border-radius:26px}
+
+  /* ---- hero: the king stands ON the word instead of hiding its letters ---- */
+  .h-stack{--kbf:.74; --ccy:.56; --cwf:.86; --kmax:3.9}
+
+  /* ---- founder photo fan stays inside its own card (was poking over the hero ticker) ---- */
+  .fan{top:22px}
+  .card{--w:clamp(88px,25vw,110px)}
+  .founder .panel-inner{padding-top:208px}
+
+  /* ---- inner-page headers: compact, not a full-screen black void ---- */
+  .subhero .panel-inner{height:auto;min-height:0;padding-bottom:30px}
+  .subhero .sh-body{padding-top:92px}
+  .subhero .sh-title{font-size:17vw}
+  .subhero .sh-sub{font-size:14px;margin-top:14px}
+
+  /* ---- homepage review carousel: even cards, no big blank gaps ---- */
+  .rv-grid.swipe .rv-card{gap:14px;padding:20px}
+  .rv-grid.swipe .rv-text{font-size:14px;line-height:1.65;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:7;overflow:hidden}
+
+  /* ---- contact: tidy full-width buttons ---- */
+  .c-actions{flex-direction:column;align-items:stretch;gap:20px}
+  .c-actions .btns{flex-direction:column;gap:10px}
+  .c-actions .btns .btn{width:100%;justify-content:center;padding:16px 20px}
+  .socials{justify-content:center}
+
+  /* ---- menu: bigger tap rows with dividers ---- */
+  .menu{padding:20px 18px 24px}
+  .menu nav{border-top:1px solid var(--line)}
+  .menu nav a{font-size:min(10.6vw,5.4svh);align-items:center;justify-content:space-between;padding:1.15svh 0;border-bottom:1px solid var(--line)}
+}
