@@ -816,5 +816,5 @@ body.menu-open .menu nav a:nth-child(9) .mi>span{transition-delay:.91s}
   .of-off{font-size:9.5px}
 }
 
-/* sections scroll normally, one after another (no stacking) */
-.panel{position:relative!important;top:auto!important}
+/* phones: sections scroll normally, one after another (no stacking) */
+@media (max-width:640px){.panel{position:relative!important;top:auto!important}}

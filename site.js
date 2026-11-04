@@ -364,7 +364,7 @@
   mm.add({ desk: '(min-width: 641px)', mob: '(max-width: 640px)' }, ctx => {
     const { mob } = ctx.conditions;
     panels.forEach((p, i) => {
-      return; // sections scroll one after another - no stacking
+      if (mob || i === panels.length - 1) return; // phones: sections scroll one after another, no stacking
       const inner = $('.panel-inner', p), shade = $('.shade', p);
       G.timeline({ scrollTrigger: { trigger: panels[i + 1], start: 'top bottom', end: 'top top', scrub: true } })
         .to(inner, { scale: mob ? .95 : .92, ease: 'none' }, 0)
