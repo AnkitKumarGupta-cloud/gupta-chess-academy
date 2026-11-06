@@ -860,3 +860,32 @@ body.menu-open .menu nav a:nth-child(9) .mi>span{transition-delay:.91s}
   .menu nav{border-top:1px solid var(--line)}
   .menu nav a{font-size:min(10.6vw,5.4svh);align-items:center;justify-content:space-between;padding:1.15svh 0;border-bottom:1px solid var(--line)}
 }
+
+/* =========================================================
+   PHONE REDESIGN (desktop untouched)
+   ========================================================= */
+@media (max-width:640px){
+  /* floating glass header: logo + menu always within reach */
+  .nav{position:fixed!important;top:max(10px,env(safe-area-inset-top,0px));left:18px;right:18px;z-index:200;
+    display:flex!important;align-items:center;justify-content:space-between;
+    padding:6px 6px 6px 18px;border-radius:999px;color:#fff;
+    background:rgba(14,14,14,.74);-webkit-backdrop-filter:blur(16px) saturate(1.3);backdrop-filter:blur(16px) saturate(1.3);
+    border:1px solid rgba(255,255,255,.13);box-shadow:0 14px 32px -14px rgba(0,0,0,.75)}
+  .nav .links{display:none!important}
+  .nav .logo{font-size:21px}
+  .nav .logo svg{width:18px;height:18px}
+  .nav .menu-btn{width:38px;height:38px}
+  .panel-inner{will-change:auto!important} /* lets the fixed header escape the hero */
+  body.menu-open .nav{opacity:0!important;pointer-events:none}
+  .hero .panel-inner::before{content:'';display:block;height:46px}
+
+  /* slimmer bottom action bar */
+  .m-cta{left:16px;right:16px;bottom:calc(14px + env(safe-area-inset-bottom,0px));gap:8px}
+  .m-cta-main{height:46px;font-size:10.5px;letter-spacing:.16em;gap:9px;box-shadow:0 12px 26px -12px rgba(200,16,46,.85)}
+  .m-cta-ic{width:24px;height:24px;font-size:13px}
+  .m-cta-wa{width:46px;height:46px}
+  .m-cta-wa svg{width:20px;height:20px}
+
+  /* easier to tap */
+  .btn{min-height:44px}
+}
