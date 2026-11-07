@@ -889,3 +889,43 @@ body.menu-open .menu nav a:nth-child(9) .mi>span{transition-delay:.91s}
   /* easier to tap */
   .btn{min-height:44px}
 }
+
+/* =========================================================
+   PHONE: edge-to-edge sections, numbered labels, chessboard dividers
+   (max-width:640px ONLY — desktop untouched)
+   ========================================================= */
+@media (max-width:640px){
+  /* one continuous page instead of floating cards on grey */
+  html,body{background:var(--ink)}
+  body{padding:0}
+  main.frame{background:var(--ink);border-radius:0;counter-reset:sec}
+  .frame .panel{margin-bottom:0}
+  .frame .panel .panel-inner,.hero .panel-inner,.subhero .panel-inner{border-radius:0!important}
+  .hero:not(.subhero) .panel-inner{height:100svh}
+
+  /* chessboard strip where one section meets the next */
+  .frame .panel:not(.hero):not(.subhero)::before{content:'';display:block;height:10px;
+    background:conic-gradient(var(--ink) 25%,#fff 0 50%,var(--ink) 0 75%,#fff 0) 0 0/20px 20px}
+
+  /* same opening for every section: red number + dash + label */
+  .sec-label{gap:10px;font-size:10.5px;letter-spacing:.2em}
+  .sec-label .dot-red{width:16px;height:1.5px;border-radius:0}
+  .panel:not(.hero):not(.subhero) .sec-label::before{counter-increment:sec;content:counter(sec,decimal-leading-zero);
+    font-family:'Bebas Neue',sans-serif;font-size:17px;letter-spacing:.04em;color:var(--red);line-height:1}
+
+  /* coaches + why-chess had no label, so they started out of nowhere */
+  .founder .panel-inner::before,.info .panel-inner::before{counter-increment:sec;
+    font-family:var(--sans);font-size:10.5px;letter-spacing:.2em;font-weight:500;text-transform:uppercase;color:var(--ink)}
+  .founder .panel-inner::before{content:counter(sec,decimal-leading-zero) "  —  OUR COACHES";
+    position:absolute;top:30px;left:var(--pad);z-index:9;white-space:pre}
+  .info .panel-inner::before{content:counter(sec,decimal-leading-zero) "  —  WHY CHESS";white-space:pre;margin-bottom:14px}
+  .founder .fan{top:76px}
+  .founder .panel-inner{padding-top:262px}
+  .info .tabs{display:none}
+  .info-h{text-align:left;font-size:12vw;line-height:.95}
+
+  /* even breathing room in every section */
+  .info .panel-inner,.programs .panel-inner,.edge .panel-inner,.ach .panel-inner,
+  .reviews .panel-inner,.branches .panel-inner,.demo .panel-inner{padding-top:52px;padding-bottom:52px}
+  .contact .panel-inner{padding-top:52px;padding-bottom:calc(92px + env(safe-area-inset-bottom,0px))}
+}
