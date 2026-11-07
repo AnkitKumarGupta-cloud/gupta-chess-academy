@@ -916,7 +916,7 @@ body.menu-open .menu nav a:nth-child(9) .mi>span{transition-delay:.91s}
   /* coaches + why-chess had no label, so they started out of nowhere */
   .founder .panel-inner::before,.info .panel-inner::before{counter-increment:sec;
     font-family:var(--sans);font-size:10.5px;letter-spacing:.2em;font-weight:500;text-transform:uppercase;color:var(--ink)}
-  .founder .panel-inner::before{content:counter(sec,decimal-leading-zero) "  —  OUR COACHES";
+  .founder .panel-inner::before{content:counter(sec,decimal-leading-zero) "  —  OUR TEAM";
     position:absolute;top:30px;left:var(--pad);z-index:9;white-space:pre}
   .info .panel-inner::before{content:counter(sec,decimal-leading-zero) "  —  WHY CHESS";white-space:pre;margin-bottom:14px}
   .founder .fan{top:76px}

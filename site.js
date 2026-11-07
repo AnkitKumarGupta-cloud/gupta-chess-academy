@@ -7,7 +7,8 @@
     { verb: 'FOUNDED',  name: 'MINU GUPTA',      role: 'FOUNDER · GUPTA CHESS ACADEMY',              photo: 'coach1.jpg', glyph: '\u265B' },
     { verb: 'COACHED',  name: 'ANKIT',           role: 'FOUNDER & HEAD COACH · DISTRICT FINALIST · 10+ YRS', photo: 'coach2.jpg', glyph: '\u265A' },
     { verb: 'TRAINED',  name: 'SANSKAR AGRAWAL', role: 'CO-FOUNDER · RAPID & BLITZ · 1800+ CHESS.COM',  photo: 'coach3.jpg', glyph: '\u265E' },
-    { verb: 'MENTORED', name: 'SATYAM PRAKASH',  role: 'FIDE RATED COACH · 1847',                     photo: 'coach4.jpg', glyph: '\u265C' }
+    { verb: 'MENTORED', name: 'SATYAM PRAKASH',  role: 'FIDE RATED COACH · 1847',                     photo: 'coach4.jpg', glyph: '\u265C' },
+    { verb: 'MANAGED',  name: 'SINDHU BEGI',     role: 'BUSINESS COORDINATOR',  photo: 'coach5.jpg', glyph: '\u265D' }
   ];
 
   const root = document.documentElement;
