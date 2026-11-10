@@ -4,11 +4,11 @@
      =========================================================== */
   const COACHES = [
     // photo: file next to index.html — if it's missing, the chess-glyph fallback card shows instead
-    { verb: 'FOUNDED',  name: 'MINU GUPTA',      role: 'FOUNDER · GUPTA CHESS ACADEMY',              photo: 'coach1.jpg', glyph: '\u265B' },
-    { verb: 'COACHED',  name: 'ANKIT',           role: 'FOUNDER & HEAD COACH · DISTRICT FINALIST · 10+ YRS', photo: 'coach2.jpg', glyph: '\u265A' },
-    { verb: 'TRAINED',  name: 'SANSKAR AGRAWAL', role: 'CO-FOUNDER · RAPID & BLITZ · 1800+ CHESS.COM',  photo: 'coach3.jpg', glyph: '\u265E' },
-    { verb: 'MENTORED', name: 'SATYAM PRAKASH',  role: 'FIDE RATED COACH · 1847',                     photo: 'coach4.jpg', glyph: '\u265C' },
-    { verb: 'MANAGED',  name: 'SINDHU BEGI',     role: 'BUSINESS COORDINATOR',  photo: 'coach5.jpg', glyph: '\u265D' }
+    { verb: 'FOUNDED',  name: 'MINU GUPTA',      role: 'FOUNDER · GUPTA CHESS ACADEMY',              photo: 'coach1.webp', glyph: '\u265B' },
+    { verb: 'COACHED',  name: 'ANKIT',           role: 'FOUNDER & HEAD COACH · DISTRICT FINALIST · 10+ YRS', photo: 'coach2.webp', glyph: '\u265A' },
+    { verb: 'TRAINED',  name: 'SANSKAR AGRAWAL', role: 'CO-FOUNDER · RAPID & BLITZ · 1800+ CHESS.COM',  photo: 'coach3.webp', glyph: '\u265E' },
+    { verb: 'MENTORED', name: 'SATYAM PRAKASH',  role: 'FIDE RATED COACH · 1847',                     photo: 'coach4.webp', glyph: '\u265C' },
+    { verb: 'MANAGED',  name: 'SINDHU BEGI',     role: 'BUSINESS COORDINATOR',  photo: 'coach5.webp', glyph: '\u265D' }
   ];
 
   const root = document.documentElement;
@@ -342,7 +342,7 @@
   let started = false;
   const start = () => { if (started) return; started = true; layout(); ST.refresh(); intro(); };
   if (document.fonts && document.fonts.ready) document.fonts.ready.then(start);
-  setTimeout(start, 600); // don't hold the intro long for fonts
+  setTimeout(start, 400); // don't hold the intro long for fonts
 
   /* ---------- king: mouse parallax + scroll drift ---------- */
   const hero = $('#p-hero');
