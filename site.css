@@ -1001,3 +1001,31 @@ body.menu-open .wa-float{opacity:0;pointer-events:none}
 .logo-mark{width:1.3em;height:1.3em;flex:none;border-radius:24%;transform:translateY(-1px)}
 .logo{gap:10px}
 @media (min-width:1101px) and (max-width:1360px){.nav .logo{gap:8px}}
+
+/* =========================================================
+   Tighter type + no outer frame (tablet & desktop, >640px)
+   ========================================================= */
+@media (min-width:641px){
+  body{padding:0}
+  .frame{border-radius:0}
+  .sec-title,.demo .sec-title{font-size:clamp(42px,5.4vw,92px)}
+  .info-h{font-size:clamp(34px,4.4vw,72px);margin:26px 0 22px}
+  .cred-l{font-size:clamp(60px,12vw,200px)}
+  .cred-r{font-size:clamp(38px,7.4vw,136px)}
+  .subhero .sh-title{font-size:clamp(54px,10vw,150px)}
+  .p-title{font-size:clamp(30px,2.5vw,42px)}
+  .why h3,.edge-item h3{font-size:clamp(22px,1.8vw,30px)}
+  .stat .num{font-size:clamp(64px,8.5vw,150px)}
+  .rv-num{font-size:clamp(52px,6vw,84px)}
+  .br-city{font-size:clamp(44px,4.6vw,80px);margin-top:54px}
+  .of-title{font-size:clamp(28px,3vw,46px)}
+  .pl-price b{font-size:clamp(40px,3.8vw,60px)}
+  .demo-phone{font-size:clamp(30px,2.6vw,40px)}
+  .ach-foot .q{font-size:clamp(22px,2.1vw,32px)}
+  .programs .panel-inner,.edge .panel-inner,.ach .panel-inner,.branches .panel-inner,
+  .reviews .panel-inner,.demo .panel-inner,.contact .panel-inner{padding-top:44px}
+  .programs .panel-inner,.edge .panel-inner,.branches .panel-inner,.reviews .panel-inner{padding-bottom:40px}
+  .plans{margin-top:96px}
+}
+.nw{white-space:nowrap}
+@media (min-width:641px){.hero .panel-inner,.subhero .panel-inner{border-radius:0}}
