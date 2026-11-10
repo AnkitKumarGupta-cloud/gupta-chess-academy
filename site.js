@@ -306,16 +306,16 @@
   root.classList.remove('anim');
 
   function intro() {
-    G.timeline({ delay: .1 })
-      .to('.h-circle-fill', { scale: 1, duration: 1.6, ease: 'expo.out' }, 0)
-      .to('.h-title .ch > span', { yPercent: 0, duration: 1.25, ease: 'power4.out', stagger: .06 }, .15)
-      .to('.king-wrap', { opacity: 1, y: 0, duration: 1.5, ease: 'power3.out' }, .45)
-      .to('.h-fade', { opacity: 1, y: 0, duration: 1, ease: 'power3.out', stagger: .06 }, .55);
+    G.timeline()
+      .to('.h-circle-fill', { scale: 1, duration: 1.1, ease: 'expo.out' }, 0)
+      .to('.h-title .ch > span', { yPercent: 0, duration: .9, ease: 'power4.out', stagger: .04 }, .05)
+      .to('.king-wrap', { opacity: 1, y: 0, duration: 1, ease: 'power3.out' }, .2)
+      .to('.h-fade', { opacity: 1, y: 0, duration: .7, ease: 'power3.out', stagger: .05 }, .3);
   }
   let started = false;
   const start = () => { if (started) return; started = true; layout(); ST.refresh(); intro(); };
   if (document.fonts && document.fonts.ready) document.fonts.ready.then(start);
-  setTimeout(start, 1500);
+  setTimeout(start, 600); // don't hold the intro long for fonts
 
   /* ---------- king: mouse parallax + scroll drift ---------- */
   const hero = $('#p-hero');
