@@ -63,7 +63,7 @@
         }
         el.style.setProperty('--kh', Math.max(60, kh) + 'px');
       }
-      if (el.dataset.fit === 'lp') size = Math.min(size, window.innerHeight * .3);
+      if (el.dataset.fit === 'lp') size = Math.min(size, window.innerHeight * .3, window.innerWidth > 640 ? Math.max(42, Math.min(92, window.innerWidth * .054)) : 1e4);
       el.style.fontSize = Math.max(size, 20) + 'px';
       if (el.dataset.fit === 'hero') {
         // centre the king and circle on the gap between CHECK and MATE (or on the word, on phones)
@@ -462,7 +462,7 @@
   });
 
   /* ---------- active nav dot follows scroll ---------- */
-  const spy = [['founder', 0], ['programs', 1], ['achievements', 2], ['branches', 4]].filter(([id]) => document.getElementById(id));
+  const spy = [['programs', 0], ['plans', 1], ['founder', 2], ['achievements', 3], ['branches', 5]].filter(([id]) => document.getElementById(id));
   G.from('.demo-card', { y: 60, opacity: 0, duration: 1.1, ease: 'power3.out', scrollTrigger: { trigger: '.demo-card', start: 'top 90%' } });
   G.from('.steps li', { x: -30, opacity: 0, duration: .8, ease: 'power3.out', stagger: .08, scrollTrigger: { trigger: '.steps', start: 'top 90%' } });
   const navLinks = $$('.links a');
