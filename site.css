@@ -997,3 +997,7 @@ body.menu-open .wa-float{opacity:0;pointer-events:none}
 @media (max-width:640px){.field:has(#d-phone){grid-column:1 / -1}}
 /* full academy name in logo: keep it clear of the centre links on small laptops */
 @media (min-width:1101px) and (max-width:1360px){.nav .logo{font-size:22px;gap:6px}.nav .logo svg{width:18px;height:18px}.links{gap:11px}}
+/* logo mark (gold G) before the academy name */
+.logo-mark{width:1.3em;height:1.3em;flex:none;border-radius:24%;transform:translateY(-1px)}
+.logo{gap:10px}
+@media (min-width:1101px) and (max-width:1360px){.nav .logo{gap:8px}}
