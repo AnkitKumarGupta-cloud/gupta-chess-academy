@@ -188,6 +188,33 @@
   }
   }
 
+  /* ---------- reviews: "read full review" on clamped phone cards ---------- */
+  {
+    const texts = $$('.rv-grid.swipe .rv-text');
+    const setup = () => texts.forEach(t => {
+      const card = t.closest('.rv-card');
+      if (card.classList.contains('open')) return;
+      let btn = card.querySelector('.rv-toggle');
+      const cut = t.scrollHeight > t.clientHeight + 2;
+      if (cut && !btn) {
+        btn = document.createElement('button');
+        btn.type = 'button'; btn.className = 'rv-toggle'; btn.textContent = 'Read full review';
+        btn.setAttribute('aria-expanded', 'false');
+        t.after(btn);
+        btn.addEventListener('click', () => {
+          const open = card.classList.toggle('open');
+          btn.textContent = open ? 'Show less' : 'Read full review';
+          btn.setAttribute('aria-expanded', String(open));
+        });
+      } else if (!cut && btn) btn.remove();
+    });
+    if (texts.length) {
+      setup();
+      if (document.fonts) document.fonts.ready.then(setup);
+      window.addEventListener('resize', setup);
+    }
+  }
+
   /* ---------- mobile sticky "book a demo" bar ---------- */
   const mCta = $('#mCta');
   function ctaState() {

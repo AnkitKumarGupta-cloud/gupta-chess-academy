@@ -1150,3 +1150,9 @@ body.menu-open .wa-float{opacity:0;pointer-events:none}
 /* safety: if the animation scripts fail to load, show the hero anyway after 2.5s */
 @keyframes heroSafety{to{opacity:1;transform:none}}
 .anim .h-fade,.anim .king-wrap,.anim .h-title .ch>span,.anim .h-circle-fill{animation:heroSafety .6s ease 2.5s forwards}
+/* reviews: expand a clamped review on phones */
+.rv-toggle{align-self:flex-start;margin-top:-6px;padding:4px 0;background:none;border:0;font:inherit;font-size:12px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--ink);text-decoration:underline;text-underline-offset:4px;text-decoration-color:var(--red);cursor:pointer}
+@media (max-width:640px){
+  .rv-grid.swipe{align-items:flex-start}
+  .rv-grid.swipe .rv-card.open .rv-text{display:block;-webkit-line-clamp:unset;overflow:visible}
+}
