@@ -1029,3 +1029,6 @@ body.menu-open .wa-float{opacity:0;pointer-events:none}
 }
 .nw{white-space:nowrap}
 @media (min-width:641px){.hero .panel-inner,.subhero .panel-inner{border-radius:0}}
+.demo-email{font-size:15px;font-weight:500;margin-top:6px;color:var(--ink);text-decoration:underline;text-decoration-color:rgba(14,21,37,.25);text-underline-offset:4px;transition:color .3s;word-break:break-all}
+.demo-email:hover{color:var(--red)}
+@media (max-width:640px){.demo-alt{display:flex!important}.demo-alt .demo-phone{font-size:30px}}
