@@ -148,6 +148,7 @@
       `Student: ${val('name') || '-'}`,
       `Age: ${val('age') || '-'}`,
       `Phone: ${val('phone') || '-'}`];
+    if (val('level')) lines.push(`Level: ${val('level')}`);
     if (val('program')) lines.push(`Interested in: ${val('program')}`);
     if (val('where')) lines.push(`Branch: ${val('where')}`);
     return lines.join('\n');
