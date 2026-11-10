@@ -1032,3 +1032,14 @@ body.menu-open .wa-float{opacity:0;pointer-events:none}
 .demo-email{font-size:15px;font-weight:500;margin-top:6px;color:var(--ink);text-decoration:underline;text-decoration-color:rgba(14,21,37,.25);text-underline-offset:4px;transition:color .3s;word-break:break-all}
 .demo-email:hover{color:var(--red)}
 @media (max-width:640px){.demo-alt{display:flex!important}.demo-alt .demo-phone{font-size:30px}}
+
+/* ---------- readability: brighter body text on dark backgrounds ---------- */
+.p-desc{color:rgba(255,255,255,.88);font-size:14px;line-height:1.6}
+.p-meta li span{color:rgba(255,255,255,.66)}
+.p-top{color:rgba(255,255,255,.7)}
+.sec-copy{color:rgba(255,255,255,.85)}
+.story p{color:rgba(255,255,255,.85)}
+.subhero .sh-sub{color:rgba(255,255,255,.85)}
+.pl-note{color:rgba(255,255,255,.78)}
+.d-note{color:rgba(255,255,255,.78)}
+@media (max-width:640px){.p-desc{font-size:13px}}
