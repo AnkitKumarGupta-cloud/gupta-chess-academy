@@ -56,7 +56,7 @@ svg{display:block}
    ========================================================= */
 .hero .panel-inner{
   background:var(--ink);color:#fff;height:calc(100svh - 24px);min-height:640px;border-radius:24px;overflow:hidden;
-  display:grid;grid-template-rows:auto auto auto 1fr auto auto;padding:22px var(--pad) 0}
+  display:grid;grid-template-rows:auto auto 1fr auto auto;padding:22px var(--pad) 0}
 .bg-grid{position:absolute;inset:0;pointer-events:none;
   background:linear-gradient(to right,rgba(255,255,255,.055) 1px,transparent 1px) 0 0/25% 100%,
              linear-gradient(to bottom,rgba(255,255,255,.04) 1px,transparent 1px) 0 0/100% 33.33%}
