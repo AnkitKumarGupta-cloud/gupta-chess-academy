@@ -992,6 +992,6 @@ body.menu-open .wa-float{opacity:0;pointer-events:none}
 .founder,.info,.edge,.demo{--red:#A87B1F}
 .demo .demo-card{--red:#D4A437}
 
-/* ---------- demo: slim section ---------- */
-.panel.demo .panel-inner{min-height:0}
+/* ---------- demo: full-height (so it holds while the form is filled) with content centred ---------- */
+@media (min-width:641px){.panel.demo .panel-inner{display:flex;flex-direction:column;justify-content:center}}
 @media (max-width:640px){.field:has(#d-phone){grid-column:1 / -1}}
