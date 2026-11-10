@@ -992,8 +992,8 @@ body.menu-open .wa-float{opacity:0;pointer-events:none}
 .founder,.info,.edge,.demo{--red:#A87B1F}
 .demo .demo-card{--red:#D4A437}
 
-/* ---------- demo: full-height (so it holds while the form is filled) with content centred ---------- */
-@media (min-width:641px){.panel.demo .panel-inner{display:flex;flex-direction:column;justify-content:center}}
+/* ---------- demo: scrolls normally (not stacked), so it can be compact and never dims while typing ---------- */
+@media (min-width:641px){.panel.flow{position:relative}.panel.flow .panel-inner{min-height:0}.panel.flow .shade{display:none}}
 @media (max-width:640px){.field:has(#d-phone){grid-column:1 / -1}}
 /* full academy name in logo: keep it clear of the centre links on small laptops */
 @media (min-width:1101px) and (max-width:1360px){.nav .logo{font-size:22px;gap:6px}.nav .logo svg{width:18px;height:18px}.links{gap:11px}}

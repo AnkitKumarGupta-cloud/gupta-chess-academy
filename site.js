@@ -82,7 +82,7 @@
     panels.forEach(p => {
       const inner = $('.panel-inner', p);
       const h = p.offsetHeight;
-      if (!p.classList.contains('last')) p.style.top = Math.min(0, ih - h) + 'px';
+      if (!p.classList.contains('last') && !p.classList.contains('flow')) p.style.top = Math.min(0, ih - h) + 'px';
       inner.style.transformOrigin = `50% ${h > ih ? h - ih / 2 : h / 2}px`;
     });
   }
@@ -366,7 +366,7 @@
   mm.add({ desk: '(min-width: 641px)', mob: '(max-width: 640px)' }, ctx => {
     const { mob } = ctx.conditions;
     panels.forEach((p, i) => {
-      if (mob || i === panels.length - 1) return; // phones: sections scroll one after another, no stacking
+      if (mob || i === panels.length - 1 || p.classList.contains('flow')) return; // phones / 'flow' sections: plain scrolling, no stacking
       const inner = $('.panel-inner', p), shade = $('.shade', p);
       G.timeline({ scrollTrigger: { trigger: panels[i + 1], start: 'top bottom', end: 'top top', scrub: true } })
         .to(inner, { scale: mob ? .95 : .92, ease: 'none' }, 0)
